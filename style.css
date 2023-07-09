@@ -48,10 +48,10 @@ body {
   border-radius: 0.3rem;
   font-size: 1rem;
   padding: 15px 20px;
-  cursor: pointer;
-  position: fixed;
   top: 7rem;
   letter-spacing: 1px;
+  cursor: pointer;
+  position: fixed;
   box-shadow: 0 3px rgba(212, 181, 70, 0.5);
   z-index: 100;
   font-family: "Poppins", sans-serif;
@@ -63,10 +63,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 500px;
-  width: 500px;
   position: relative;
   transition: 0.4s ease;
+  height: 500px;
+  width: 500px;
 }
 .boxes.big {
   width: 600px;
@@ -75,31 +75,31 @@ body {
 .box {
   background-image: url(./giphy.gif);
   background-repeat: no-repeat;
-  background-size: 500px 500px;
   position: relative;
   height: 125px;
   width: 125px;
   transition: 0.4s ease;
+  background-size: 500px 500px;
 }
 .box::before {
+  left: 8px;
+  height: 15px;
   content: "";
   background-color: #f9ca24;
   position: absolute;
   bottom: -15px;
-  left: 8px;
-  height: 15px;
   width: 100%;
   transform: skewX(45deg);
 }
 .box::after {
-  content: "";
-  background-color: #f6e58d;
-  position: absolute;
-  top: 8px;
   right: -15px;
   height: 100%;
   width: 15px;
   transform: skewY(45deg);
+  content: "";
+  background-color: #f6e58d;
+  position: absolute;
+  top: 8px;
 }
 .box-one {
   background-position: 0px 0px;
